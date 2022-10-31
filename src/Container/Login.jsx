@@ -58,7 +58,7 @@ const Login = () => {
             onClick={() => login()}
             color="#f1f1f1"
           >
-            Signin with Google
+            Sign In with Google
           </Button>
         </HStack>
       </Flex>
