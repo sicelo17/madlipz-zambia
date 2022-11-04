@@ -185,7 +185,7 @@ const Create = () => {
           <Menu>
             <MenuButton
               width={"full"}
-              colorScheme="blue"
+              color="#009245"
               as={Button}
               rightIcon={<IoChevronDown fontSize={25} />}
             >
@@ -352,7 +352,7 @@ const Create = () => {
         <Button
           isLoading={loading}
           loadingText="Uploading"
-          colorScheme={"linkedin"}
+          color="#009245"
           variant={`${loading ? "outline" : "solid"}`}
           width={"xl"}
           _hover={{ shadow: "lg" }}

@@ -24,7 +24,7 @@ const Login = () => {
     localStorage.setItem("accessToken", JSON.stringify(refreshToken));
 
     await setDoc(
-      doc(firebaseDb, "users", providerData[0].uid),
+      doc(firebaseDb, 'users', providerData[0].uid),
       providerData[0]
     );
 
@@ -56,7 +56,7 @@ const Login = () => {
             colorScheme="whiteAlpha"
             shadow={"lg"}
             onClick={() => login()}
-            color="#f1f1f1"
+            color="#009245"
           >
             Sign In with Google
           </Button>
