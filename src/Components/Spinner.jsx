@@ -12,7 +12,7 @@ const Spinner = ({ msg, progress }) => {
       height={"full"}
       px={10}
     >
-      <Circles color="#00BFFF" height={80} width={80} />
+      <Circles color="#009245" height={80} width={80} />
       <Text fontSize={25} textAlign="center" px={2}>
         {msg}
       </Text>
@@ -26,7 +26,7 @@ const Spinner = ({ msg, progress }) => {
           value={Number.parseInt(progress)}
           width={"lg"}
           rounded="sm"
-          colorScheme={"linkedin"}
+          color="#009245"
         />
       )}
     </Flex>
