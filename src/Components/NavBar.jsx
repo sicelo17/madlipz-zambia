@@ -22,7 +22,7 @@ const NavBar = ({ user, setsearchTerm, searchTerm }) => {
         <Image src={colorMode == "light" ? logo_dark : logo} width={"180px"} />
       </Link>
 
-      <InputGroup mx={6} width="60vw">
+      {/* <InputGroup mx={6} width="60vw">
         <InputLeftElement
           pointerEvents="none"
           children={<IoSearch fontSize={25} />}
@@ -37,7 +37,7 @@ const NavBar = ({ user, setsearchTerm, searchTerm }) => {
           onChange={(e) => setsearchTerm(e.target.value)}
           onFocus={() => navigate("/search")}
         />
-      </InputGroup>
+      </InputGroup> */}
 
       <Flex justifyContent={"center"} alignItems="center">
         <Flex
@@ -101,7 +101,7 @@ const NavBar = ({ user, setsearchTerm, searchTerm }) => {
                 navigate("/login", { replace: true });
               }}
             >
-              Logout <IoLogOut fontSize={20} />
+              LogOut <IoLogOut fontSize={20} />
             </MenuItem>
           </MenuList>
         </Menu>
