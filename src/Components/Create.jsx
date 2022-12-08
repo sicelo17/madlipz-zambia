@@ -29,7 +29,7 @@ const Create = () => {
   const editorRef = useRef(null);
 
   const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("Choose as category");
+  const [category, setCategory] = useState("");
   const [location, setLocation] = useState("");
   const [videoAsset, setVideoAsset] = useState(null);
   const [loading, setLoading] = useState(false);

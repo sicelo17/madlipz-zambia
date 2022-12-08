@@ -13,7 +13,7 @@ const Category = ({ data }) => {
   const bg = useColorModeValue("gray.600", "gray.300");
 
   return (
-    <Flex cursor={"pointer"} my="5">
+    <Flex cursor={"pointer"} my="5" >
       <Link to={`/category/${data.name}`}>
         <Tooltip
           hasArrow
@@ -23,7 +23,7 @@ const Category = ({ data }) => {
           label={data.name}
           bg={bg}
         >
-          <Box>{data.iconSrc}</Box>
+          <Box ml={5}>{data.iconSrc}</Box>
         </Tooltip>
       </Link>
     </Flex>
