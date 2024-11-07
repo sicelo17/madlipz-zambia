@@ -197,20 +197,23 @@ const VideoPinDetail = () => {
         <GridItem width={"100%"} colSpan="3">
           <Flex
             width={"full"}
+            height={"40%"}
             bg="black"
             position="relative"
             ref={playerContainer}
           >
             <ReactPlayer
-              ref={playerRef}
-              url={videoInfo?.videoUrl}
-              width="100%"
-              height={"100%"}
-              playing={isPlaying}
-              muted={muted}
-              volume={volume}
-              onProgress={handleProgress}
+                ref={playerRef}
+                url={videoInfo?.videoUrl}
+                width="100%"
+                height="100%"
+                style={{ objectFit: "cover" }}
+                playing={isPlaying}
+                muted={muted}
+                volume={volume}
+                onProgress={handleProgress}
             />
+
 
             {/* Controls for video Player */}
             <Flex
